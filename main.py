@@ -1,3 +1,4 @@
+# 104086280
 def is_interger(string: str) -> bool:
     """Проверить что подстрока это число."""
     flag: bool = True
