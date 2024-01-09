@@ -1,11 +1,14 @@
 # 104349944
-def instructions(string: str):
+
+CONVERSION_CATEGORIES = 10
+
+def instructions(string: str) -> str:
     stack = []
     result: str = ''
     number_in_string: int = 0
     for character in string:
         if character.isdigit():
-            number_in_string = number_in_string*10 + int(character)
+            number_in_string = number_in_string * CONVERSION_CATEGORIES + int(character)
 
         elif character == '[':
             stack.append((number_in_string, result))
